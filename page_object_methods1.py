@@ -32,3 +32,9 @@ class HomePageAround:
         self.driver.find_element(*self.save_button).click()
 
     # The step to add a new place
+    def add_new_place(self,name,picture)
+        self.set_name()
+        self.set_link_to_picture_field()
+        self.click_add_new_place_button()
+        self.click_save_button()
+    
